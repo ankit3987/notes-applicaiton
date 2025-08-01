@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+backend/.env
+frontend/.env
+frontend/.env.local
+
+
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.local
+*.cache
+*.tmp
+*.swp
+*.bak
+*.orig
+*.test.js
+
+# Optional: Ignore test coverage
+coverage/
+.nyc_output/

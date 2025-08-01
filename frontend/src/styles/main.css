@@ -1,0 +1,175 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+.app-bar {
+  background: linear-gradient(90deg, #70a7ff 10%, #74e2ff 90%);
+  box-shadow: 0 2px 12px rgba(60,110,240,0.08);
+  padding: 0.6rem 2.5rem;
+  margin-bottom: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 18px 18px;
+  border-bottom: 2px solid #7ad1e9;
+  min-height: 65px;
+}
+
+.app-bar a {
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+
+.app-bar a:hover,
+.app-bar button:hover {
+  color: #2a507e !important;
+}
+
+.app-bar span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-bar button {
+  margin-left: 13px;
+  background: rgba(60,110,240, 0.16);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: .4rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.app-bar button:hover {
+  background: rgba(60,110,240, 0.42);
+  color: #fff;
+}
+
+
+.form-container {
+  background: #fff;
+  border-radius: 1.1rem;
+  padding: 2.2rem 2rem 2rem 2rem;
+  max-width: 380px;
+  margin: 2.5rem auto;
+  box-shadow: 0 2px 28px #8fd2fa30, 0 0 0 1.5px #7edbff;
+  border: 1.7px solid #78cdfc;
+  /* ↑ Adds a blue border effect */
+  transition: box-shadow 0.18s, border-color 0.18s;
+}
+
+.form-container:focus-within {
+  box-shadow: 0 4px 32px #44b7fc66, 0 0 0 2px #60bfff;
+  border-color: #2faaf3;
+}
+
+
+
+
+.form-container button {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: .5rem;
+  font-weight: 600;
+  font-size: 1.08rem;
+  letter-spacing: .03em;
+  background: linear-gradient(90deg, #64b3fd 30%, #5de0fc 100%);
+  color: white;
+  border: none;
+  padding: .7rem 0;
+  box-shadow: 0 1.5px 12px #79c8ff20;
+  transition: background .18s;
+}
+.form-container button:hover {
+  background: linear-gradient(90deg, #3a8ef9 25%, #33bbfd 100%);
+}
+
+
+
+
+
+
+
+
+input, textarea {
+  width: 100%;
+  margin: .5rem 0 1rem 0;
+  padding: .8rem 1rem;
+  background: #f5f8fa;
+  border: 1px solid #e3e3e3;
+  border-radius: .5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border .2s;
+}
+input:focus, textarea:focus {
+  border-color: #a1c4fd;
+}
+button {
+  padding: .7rem 1.3rem;
+  color: #fff;
+  background: linear-gradient(120deg, #5f72bd, #9cd0fa);
+  border: none;
+  border-radius: .5rem;
+  font-size: 1rem;
+  box-shadow: 0 1px 6px #0001;
+  transition: 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(120deg, #3f518d, #47a6e9);
+}
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.note-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem;
+  min-height: 170px;
+  position: relative;
+}
+.note-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.note-date {
+  color: #7ca2be;
+  font-size: .9rem;
+  margin-bottom: .8rem;
+}
+.delete-btn, .edit-btn {
+  font-size: .8rem;
+  margin-left: 6px;
+  background: #f66d6d;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.edit-btn {
+  background: #63abfd;
+}
+@media (max-width: 480px) {
+  .form-container, .app-bar {
+    padding: 1rem;
+  }
+}
